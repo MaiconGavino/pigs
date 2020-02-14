@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Dashboard
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Dashboard curral nº1-->
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Curral nº 1</ion-card-title>    
+      <ion-card-subtitle>Dashboard do consumo médio semanal de ração dos tipo A e B</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
+<!--Dashboard curral nº2-->
+  <ion-card class="welcome-card1">
+    <ion-card-header>
+      <ion-card-title>Curral nº 2</ion-card-title>    
+      <ion-card-subtitle>Dashboard do consumo médio semanal de ração dos tipo A e B</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart1></canvas>
+    </ion-card-content>
+  </ion-card>
+<!--Dashboard Comparação de consumo-->
+  <ion-card class="welcome-card2">
+    <ion-card-header>
+      <ion-card-title>Consumo Geral</ion-card-title>
+      <ion-card-subtitle>Grafico de média geral de consumo das rações do tipo A e do tipo B</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <div id="simplePie" style="width:110%; height:200px;"></div>
+    </ion-card-content>
+  </ion-card>
+
+  <!--Dashboard Comparação de consumo Água-->
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Consumo de Água</ion-card-title>
+      <ion-card-subtitle>Dashboard de comparação de consumo de água no curral nº1 e no curral nº2</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #hrzBarChart></canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

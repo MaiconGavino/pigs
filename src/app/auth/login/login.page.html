@@ -1,0 +1,32 @@
+<ion-content color="primary" padding>
+  <form #form="ngForm" (ngSubmit)="login(form)">
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3>Login</h3>
+          </div>
+          <section text-center margin-bottom>
+            <div class="container" class="logo">
+              <img src="/assets/img/Logo.png"/>
+          </div>
+          </section>
+          <div padding class="login">
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+            </ion-item><br/>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+            </ion-item><br/>
+          </div>
+          <div padding>
+            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block" [routerLink]="['/home']" routerLinkActive="router-link-active" >Login</ion-button>
+          </div>
+          <section text-center magin-bottom class="rodape">
+            <span>Sistema de monitoramento para criadores de Suinos!</span>
+          </section>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
