@@ -29,7 +29,7 @@
     "cordova-plugin-video-player": "^1.0.1",
     "core-js": "^2.5.4",
     "express": "^4.17.1",
-    "highcharts": "^8.0.0",
+    "highcharts": "^9.0.0",
     "native-run": "^0.3.0",
     "node-sass": "^4.13.1",
     "rxjs": "~6.5.1",
